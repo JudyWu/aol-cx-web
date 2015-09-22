@@ -457,31 +457,31 @@
         <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=true"></script>
         <script type="text/javascript" src="js/gmaps.js"></script>
         <script type="text/javascript">
-            var map;
-            $(document).ready(function() {
-                $('#project-nav-button').click(function() {
-                    $('html, body').animate({
-                       scrollTop: $('#projects-content').offset().top - 50}, 1000);
-                });
+        //     var map;
+        //     $(document).ready(function() {
+        //         $('#project-nav-button').click(function() {
+        //             $('html, body').animate({
+        //                scrollTop: $('#projects-content').offset().top - 50}, 1000);
+        //         });
 
-                $('#about-nav-button').click(function() {
-                    $('html, body').animate({
-                      scrollTop: $('#about-us-content').offset().top - 50}, 1000);
-                });
+        //         $('#about-nav-button').click(function() {
+        //             $('html, body').animate({
+        //               scrollTop: $('#about-us-content').offset().top - 50}, 1000);
+        //         });
 
-                $('#news-nav-button').click(function() {
-                    $('html, body').animate({
-                      scrollTop: $('#news-content').offset().top - 50}, 1000);
-                });
+        //         $('#news-nav-button').click(function() {
+        //             $('html, body').animate({
+        //               scrollTop: $('#news-content').offset().top - 50}, 1000);
+        //         });
                 // main directions
-                map = new GMaps({
-                    el: '#map', lat: 40.7413304, lng: -74.0053443, zoom: 15, zoomControl: true,
-                    zoomControlOpt: {style: 'SMALL', position: 'TOP_LEFT'}, panControl: false, scrollwheel: false
-                });
-                // add address markers
-                map.addMarker({lat: 40.7410542, lng: -74.0021515, title: 'Cornell Tech',
-                    infoWindow: {content: '<p>You can add your address 1 here</p>'}});
-            });
+            //     map = new GMaps({
+            //         el: '#map', lat: 40.7413304, lng: -74.0053443, zoom: 15, zoomControl: true,
+            //         zoomControlOpt: {style: 'SMALL', position: 'TOP_LEFT'}, panControl: false, scrollwheel: false
+            //     });
+            //     // add address markers
+            //     map.addMarker({lat: 40.7410542, lng: -74.0021515, title: 'Cornell Tech',
+            //         infoWindow: {content: '<p>You can add your address 1 here</p>'}});
+            // });
         </script>
 
 
