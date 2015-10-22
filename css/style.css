@@ -398,7 +398,7 @@ FOOTER
 }
 .widget p{
     /*color:#777;*/
-    color: white;
+    color: black;
 }
 .footer-bottom{
     padding: 50px 0;
@@ -1471,7 +1471,7 @@ p.slide-line{
 }
 
 .newsletter h2{
-    color:#fff;
+    /*color:#fff;*/
 }
 .newsletter p{
     color:#bbb;
