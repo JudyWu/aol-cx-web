@@ -48,13 +48,13 @@
                 </div>
                 <div id="navbar" class="navbar-collapse collapse">
                     <ul class="nav navbar-nav navbar-right">
-                        <li class="dropdown">
+                        <li>
                             <a href="" id="projects-nav-button" class="dropdown-toggle" data-toggle="dropdown" role="button">Projects</a>
                         </li>
-                         <li class="dropdown">
+                         <li>
                             <a href="" id="about-nav-button" class="dropdown-toggle" data-toggle="dropdown" role="button">About Us</a>
                         </li>
-                        <li class="dropdown">
+                        <li>
                             <a href="" id="news-nav-button" class="dropdown-toggle" data-toggle="dropdown" role="button">In the News</a>
                         </li>
                     </ul>
@@ -406,7 +406,7 @@
                             </div>
                         </div><!--widget-->
                     </div><!--footer col end-->
-                    <div class="col-sm-5">
+                    <div class="col-sm-6">
                         <div class="widget margin-btm40 recent-work">
                             <h3>Sponsored by</h3>
                             <a href="http://tech.cornell.edu/" target="_blank">
@@ -453,34 +453,27 @@
 
         <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=true"></script>
         <script type="text/javascript" src="js/gmaps.js"></script>
+        <script type="text/javascript"></script>
+
         <script type="text/javascript">
-        //     var map;
-        //     $(document).ready(function() {
-        //         $('#project-nav-button').click(function() {
-        //             $('html, body').animate({
-        //                scrollTop: $('#projects-content').offset().top - 50}, 1000);
-        //         });
-
-        //         $('#about-nav-button').click(function() {
-        //             $('html, body').animate({
-        //               scrollTop: $('#about-us-content').offset().top - 50}, 1000);
-        //         });
-
-        //         $('#news-nav-button').click(function() {
-        //             $('html, body').animate({
-        //               scrollTop: $('#news-content').offset().top - 50}, 1000);
-        //         });
-                // main directions
-            //     map = new GMaps({
-            //         el: '#map', lat: 40.7413304, lng: -74.0053443, zoom: 15, zoomControl: true,
-            //         zoomControlOpt: {style: 'SMALL', position: 'TOP_LEFT'}, panControl: false, scrollwheel: false
-            //     });
-            //     // add address markers
-            //     map.addMarker({lat: 40.7410542, lng: -74.0021515, title: 'Cornell Tech',
-            //         infoWindow: {content: '<p>You can add your address 1 here</p>'}});
-            // });
+            $(document).ready(function() {
+                $("#projects-nav-button").click(function(){
+                    $('html, body').animate({
+                        scrollTop: $("#projects-content").offset().top
+                    }, 2000);
+                });
+                $("#about-nav-button").click(function(){
+                    $('html, body').animate({
+                        scrollTop: $("#about-us-content").offset().top
+                    }, 2000);
+                });
+                $("#news-nav-button").click(function(){
+                    $('html, body').animate({
+                        scrollTop: $("#news-content").offset().top
+                    }, 2000);
+                });
+            })
         </script>
-
 
     </body>
 </html>
